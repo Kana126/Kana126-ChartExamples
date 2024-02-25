@@ -9,7 +9,7 @@ import chart3
 
 # Создание главного окна
 window = tk.Tk()
-window.geometry("450x450")
+window.geometry("450x550")
 window.title("Примеры построения графиков")
 
 #Функция закрытия программы
@@ -41,9 +41,37 @@ btnChart3.place(x=40, y=215, width=90, height=30)
 lblChart3 = tk.Label(text = "Нормальное Seaborn")
 lblChart3.place(x=170, y=222)
 
+#Добавление кнопки и метки для графика 4
+btnChart4 = tk.Button(window, text='График 4', font = ('Helvetica', 10, 'bold'),command=chart2.plot_chart)
+btnChart4.place(x=40, y=272, width=90, height=30)
+
+lblChart4 = tk.Label(text = "Нормальное распределение 3 графика")
+lblChart4.place(x=170, y=282)
+
+#Добавление кнопки и метки для графика 5
+btnChart5 = tk.Button(window, text='График 5', font = ('Helvetica', 10, 'bold'),command=chart2.plot_chart)
+btnChart5.place(x=40, y=322, width=90, height=30)
+
+lblChart5 = tk.Label(text = "Описание графика")
+lblChart5.place(x=170, y=332)
+
+#Добавление кнопки и метки для графика 6
+btnChart6 = tk.Button(window, text='График 6', font = ('Helvetica', 10, 'bold'),command=chart2.plot_chart)
+btnChart6.place(x=40, y=382, width=90, height=30)
+
+lblChart6 = tk.Label(text = "Описание графика")
+lblChart6.place(x=170, y=392)
+
+#Добавление кнопки и метки для графика 7
+btnChart7 = tk.Button(window, text='График 7', font = ('Helvetica', 10, 'bold'),command=chart2.plot_chart)
+btnChart7.place(x=40, y=432, width=90, height=30)
+
+lblChart7 = tk.Label(text = "Описание графика")
+lblChart7.place(x=170, y=442)
+
 # Добавление кнопки закрытия прогаммы
 btnClose = tk.Button(window, text='Закрыть', font = ('Helvetica', 10, 'bold'), command=do_close)
-btnClose.place(x=330, y=400, width=99, height=30)
+btnClose.place(x=330, y=500, width=99, height=30)
 
 # Запуск цикла mainloop
 window.mainloop()
