@@ -45,3 +45,4 @@ def plot_chart2():
     ax.grid()
     
     plt.show()
+    
